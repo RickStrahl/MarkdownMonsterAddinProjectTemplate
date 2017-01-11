@@ -7,10 +7,11 @@ This project contains the code for a Visual Studio project template to create a 
 
 ![](NewVSProjectScreenShot.png)
 
-You can install the [VSIX template from this project](https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate/raw/master/MarkdownMonsterAddinProjectTemplate.vsix) or install from within Visual Studio or the Visual Studio Gallery.
+You can install the VSIX template from within the [Visual Studio Extension Manager] (https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e), or from the [VSIX template from this project](https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate/raw/master/MarkdownMonsterAddinProjectTemplate.vsix).
 
 ### Additional Resources
-* [Creating Markdown Monster Addin Documentation](http://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm)
-* [Markdown Monster Repo](https://github.com/rickstrahl/MarkdownMonster)
+* [Creating a Markdown Monster Addin](http://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm)
+* [Markdown Monster](https://github.com/rickstrahl/MarkdownMonster)
 * [Markdown Monster Addin Repository](https://github.com/RickStrahl/MarkdownMonsterAddinsRegistry)
+* [Markdown Monster Addin Project in the Visual Studio Gallery](https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e)
 
