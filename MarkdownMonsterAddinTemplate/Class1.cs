@@ -5,19 +5,19 @@ using MarkdownMonster.AddIns;
 
 namespace $safeprojectname$
 {
-    public class $safeitemname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
+    public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {
         public override void OnApplicationStart()
         {
             base.OnApplicationStart();
 
-            Id = "$safeitemname$";
+            Id = " $safeprojectname$";
 
             // by passing in the add in you automatically
             // hook up OnExecute/OnExecuteConfiguration/OnCanExecute
             var menuItem = new AddInMenuItem(this)
             {
-                Caption = "Sample Add in",
+                Caption = " $safeprojectname$",
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu

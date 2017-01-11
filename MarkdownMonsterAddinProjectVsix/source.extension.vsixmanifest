@@ -6,7 +6,7 @@
     <Description xml:space="preserve">Creates a new Markdown Monster Addin Project</Description>
     <MoreInfo>http://markdownmonster.west-wind.com/docs/_4ne0rl1zf.htm</MoreInfo>
     <GettingStartedGuide>http://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm</GettingStartedGuide>
-    <Icon>__PreviewImage.png</Icon>
+    <Icon>__TemplateIcon.png</Icon>
     <PreviewImage>__PreviewImage.png</PreviewImage>
   </Metadata>
   <Installation>

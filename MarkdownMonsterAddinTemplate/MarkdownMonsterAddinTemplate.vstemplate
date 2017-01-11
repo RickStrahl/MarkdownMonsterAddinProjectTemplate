@@ -20,6 +20,8 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Class1.cs">Class1.cs</ProjectItem>      
+      <ProjectItem ReplaceParameters="true" TargetFileName="version.json">version.json</ProjectItem>   
+      <ProjectItem ReplaceParameters="true" TargetFileName="icon.png">icon.png</ProjectItem> 
     </Project>
   </TemplateContent>
 </VSTemplate>
