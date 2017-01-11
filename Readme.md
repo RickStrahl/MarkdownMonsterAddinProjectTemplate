@@ -9,6 +9,10 @@ This project contains the code for a Visual Studio project template to create a 
 
 You can install the VSIX template from within the [Visual Studio Extension Manager] (https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e), or from the [VSIX template from this project](https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate/raw/master/MarkdownMonsterAddinProjectTemplate.vsix).
 
+
+> #### @icon-warning Requires .NET 4.6.2
+> Markdown Monster Addins have to be built against .NET 4.6.2 as that is the base version that Markdown Monster is built against. The dependencies in the addin project require the same runtime level in order to bind to the host assembly.
+
 ### Additional Resources
 * [Creating a Markdown Monster Addin](http://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm)
 * [Markdown Monster](https://github.com/rickstrahl/MarkdownMonster)
