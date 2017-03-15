@@ -77,15 +77,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AssemblyInfo.cs" />
-    <None Include="Class1.cs" />
+    <None Include="Addin.cs" />
+    <None Include="Configuration.cs" />
     <None Include="MarkdownMonsterAddin.csproj">
       <SubType>Designer</SubType>
     </None>
-    <None Include="MarkdownMonsterAddinTemplate.ico" />
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="MarkdownMonsterAddinTemplate.vstemplate">

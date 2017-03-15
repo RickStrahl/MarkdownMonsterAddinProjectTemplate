@@ -19,9 +19,14 @@
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Class1.cs">Class1.cs</ProjectItem>      
+      <ProjectItem ReplaceParameters="true" TargetFileName="Addin.cs">Addin.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="version.json">version.json</ProjectItem>   
-      <ProjectItem TargetFileName="icon.png">icon.png</ProjectItem> 
+      <ProjectItem ReplaceParameters="true" TargetFileName="build.ps1">build.ps1</ProjectItem>   
+      
+      <ProjectItem TargetFileName="icon.png">icon.png</ProjectItem>       
+      <ProjectItem TargetFileName="7z.exe">7z.exe</ProjectItem> 
+      <ProjectItem TargetFileName="7z.dll">7z.dll</ProjectItem> 
     </Project>
   </TemplateContent>
 </VSTemplate>

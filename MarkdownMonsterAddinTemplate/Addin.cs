@@ -11,7 +11,12 @@ namespace $safeprojectname$
         {
             base.OnApplicationStart();
 
-            Id = " $safeprojectname$";
+            // Id - should match output folder name
+            Id = "$safeprojectname$";
+
+            // a descriptive name - shows up on labels and tooltips for components
+            Name = "$safeprojectname$";
+
 
             // by passing in the add in you automatically
             // hook up OnExecute/OnExecuteConfiguration/OnCanExecute
