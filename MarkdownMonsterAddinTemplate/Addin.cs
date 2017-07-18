@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using FontAwesome.WPF;
+using MarkdownMonster;
 using MarkdownMonster.AddIns;
 
 namespace $safeprojectname$
@@ -22,7 +23,7 @@ namespace $safeprojectname$
             // hook up OnExecute/OnExecuteConfiguration/OnCanExecute
             var menuItem = new AddInMenuItem(this)
             {
-                Caption = " $safeprojectname$",
+                Caption = "$safeprojectname$",
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu
@@ -38,8 +39,26 @@ namespace $safeprojectname$
 
         public override void OnExecute(object sender)
         {
-            MessageBox.Show("Hello from your sample Addin", "Markdown Addin Sample",
-                            MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Hello from your $safeprojectname$ Addin", "$safeprojectname$ Addin",
+                MessageBoxButton.OK, MessageBoxImage.Information);
+
+
+            // *** Some things you can do:
+
+            // // modify selected editor text
+            //var text = GetSelection();
+            //text = "<small>" + text + "</small>";
+            //SetSelection(text);
+            //RefreshPreview();
+
+            // // open a new tab with a file
+            //OpenTab(Path.Combine(mmApp.Configuration.CommonFolder, "$safeprojectname$.json"));
+
+            // // run a process
+            //var imageFile = GetSelection();  // assume image file is selected
+            //if (!imageFile.Contains(":\\"))
+            //    imageFile = Path.Combine(Path.GetDirectoryName(ActiveDocument.Filename), imageFile);
+            //Process.Start("paint.exe", imageFile);
         }
 
         public override void OnExecuteConfiguration(object sender)

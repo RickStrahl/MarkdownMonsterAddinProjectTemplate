@@ -32,23 +32,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.WPF">      
-      <HintPath>$(ProgramFiles)\Markdown Monster\FontAwesome.WPF.dll</HintPath>
+      <HintPath>$(LocalAppData)\Markdown Monster\FontAwesome.WPF.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MahApps.Metro">
-      <HintPath>$(ProgramFiles)\Markdown Monster\MahApps.Metro.dll</HintPath>
+      <HintPath>$(LocalAppData)\Markdown Monster\MahApps.Metro.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>$(ProgramFiles)\Markdown Monster\NewtonSoft.Json.dll</HintPath>
+      <HintPath>$(LocalAppData)\Markdown Monster\NewtonSoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Westwind.Utilities">
-      <HintPath>$(ProgramFiles)\Markdown Monster\Westwind.Utilities.dll</HintPath>
+      <HintPath>$(LocalAppData)\Markdown Monster\Westwind.Utilities.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MarkdownMonster">
-      <HintPath>$(ProgramFiles)\Markdown Monster\MarkdownMonster.exe</HintPath>
+      <HintPath>$(LocalAppData)\Markdown Monster\MarkdownMonster.exe</HintPath>
       <Private>False</Private>
     </Reference>        
     <Reference Include="System" />
