@@ -12,10 +12,12 @@ namespace $safeprojectname$
         {
             base.OnApplicationStart();
 
-            // Id - should match output folder name
+            
+            // Id - should match output folder name. REMOVE 'Addin' from the Id
             Id = "$safeprojectname$";
 
             // a descriptive name - shows up on labels and tooltips for components
+            // REMOVE 'Addin' from the Name
             Name = "$safeprojectname$";
 
 
@@ -23,7 +25,7 @@ namespace $safeprojectname$
             // hook up OnExecute/OnExecuteConfiguration/OnCanExecute
             var menuItem = new AddInMenuItem(this)
             {
-                Caption = "$safeprojectname$",
+                Caption = Name,
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu
