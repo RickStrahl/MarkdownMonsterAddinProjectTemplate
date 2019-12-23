@@ -8,6 +8,16 @@ namespace $safeprojectname$
 {
     public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {
+
+
+        /// <summary>
+        /// Fired when the Addin is initially loaded. This is very early in
+        /// the lifecycle and should only be used to create the addin name
+        /// and UI options.
+        /// </summary>
+        /// <remarks>
+        /// You do not have access to the Model or UI from this overload.
+        /// </remarks>  
         public override void OnApplicationStart()
         {
             base.OnApplicationStart();
@@ -36,9 +46,33 @@ namespace $safeprojectname$
             //menuItem.ExecuteConfiguration = null;
 
             // Must add the menu to the collection to display menu and toolbar items            
-            this.MenuItems.Add(menuItem);
+            MenuItems.Add(menuItem);
         }
 
+        /// <summary>
+        /// Fired after the model has been loaded. If you need model access during loading
+        /// this is the place to hook up your code.
+        /// </summary>
+        /// <param name="model">The Markdown Monster Application model</param>
+        public override void OnModelLoaded(AppModel model) 
+        { }
+
+
+        /// <summary>
+        /// Fired after the Markdown Monster UI becomes available
+        /// for manipulation.
+        ///
+        /// If you add UI elements as part of your Addin, this is the
+        /// place where you can hook them up.
+        /// </summary>
+        public override void OnWindowLoaded() 
+        { }
+
+
+        /// <summary>
+        /// Fired when you click the addin button in the toolbar.
+        /// </summary>
+        /// <param name="sender"></param>
         public override void OnExecute(object sender)
         {
             MessageBox.Show("Hello from your $safeprojectname$ Addin", "$safeprojectname$ Addin",
@@ -63,12 +97,24 @@ namespace $safeprojectname$
             //Process.Start("paint.exe", imageFile);
         }
 
+
+        /// <summary>
+        /// Fired when you click on the configuration button in the addin
+        /// </summary>
+        /// <param name="sender">The Execute toolbar button for this addin</param>
         public override void OnExecuteConfiguration(object sender)
         {
-            MessageBox.Show("Configuration for our sample Addin", "Markdown Addin Sample",
+            MessageBox.Show("Configuration for our sample Addin",
+                            "Markdown Addin Sample",
                             MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
+
+        /// <summary>
+        /// Determines on whether the addin can be executed
+        /// </summary>
+        /// <param name="sender">The Execute toolbar button for this addin</param>
+        /// <returns></returns>
         public override bool OnCanExecute(object sender)
         {
             return true;
