@@ -7,7 +7,16 @@ This project contains a Visual Studio Project Template to create a new Markdown 
 
 ![](NewVSProjectScreenShot.png)
 
-You can install the VSIX template from within the [Visual Studio Extension Manager](https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e), or from the [VSIX template from this project](https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate/raw/master/MarkdownMonsterAddinProjectVsix/bin/Release/MarkdownMonsterAddinProjectTemplate.vsix).
+
+## Extension Installation
+You can install the Visual Studio Extension from:
+
+*  [Visual Studio Extension Manager](https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e)  
+Use the built in Visual Studio Extension Manager via the **Extensions -> Manage Extension** menu. To install look for Online Extensions and install the **Markdown Monster Addin Project** Extension.
+
+* [Download and Install the VSIX](https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate/raw/master/MarkdownMonsterAddinProjectVsix/bin/Release/MarkdownMonsterAddinProjectTemplate.vsix)    
+You can also download and install the VSIX directly from the Git repository. Click the link to download the VSIX file, and execute `MarkdownMonsterAddinProjectTemplate.vsix` from Explorer by double clicking.
+
 
 ## Requirements
 
