@@ -3,7 +3,7 @@
 <img src="MarkdownMonster_Icon_256.png" width="150"/>
 
 ## Create new Markdown Monster Addins From Visual Studio
-This project contains a Visual Studio Project Template to create a new Markdown Monster Addin. It adds a new project type to Visual Studio that lets you create a new Addin project:
+This project contains a Visual Studio Project Template to create a new Markdown Monster Addin. It adds a new project type to Visual Studio that lets you create a new, ready to run Markdown Monster Addin project:
 
 ![](NewVSProjectScreenShot.png)
 
