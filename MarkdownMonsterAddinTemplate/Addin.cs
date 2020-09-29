@@ -6,6 +6,13 @@ using MarkdownMonster.AddIns;
 
 namespace $safeprojectname$
 {
+
+    /// <summary>
+    /// @@@ $safeprojectname$ @@@
+    ///
+    /// More info on Addin Development:
+    /// https://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm
+    /// </summary>
     public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {
 

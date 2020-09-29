@@ -7,27 +7,26 @@
     </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>MarkdownMonsterAddinProject</DefaultName>
+    <DefaultName>MarkdownMonsterAddin</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
+    <CreateInPlace>true</CreateInPlace>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.png</Icon>
     <PreviewImage>__PreviewImage.png</PreviewImage>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="MarkdownMonsterAddin.csproj" File="MarkdownMonsterAddin.csproj" ReplaceParameters="true">
-      <Folder Name="Properties" TargetFolderName="Properties">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      </Folder>      
-      <ProjectItem ReplaceParameters="true" TargetFileName="MarkdownMonsterAddin.csproj.user">MarkdownMonsterAddin.csproj.user</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="icon.png">icon.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="build.ps1">build.ps1</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="7z.dll">7z.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="7z.exe">7z.exe</ProjectItem>
+      
       <ProjectItem ReplaceParameters="true" TargetFileName="Addin.cs">Addin.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="version.json">version.json</ProjectItem>   
-      <ProjectItem ReplaceParameters="true" TargetFileName="build.ps1">build.ps1</ProjectItem>   
+      <ProjectItem ReplaceParameters="true" TargetFileName="License.txt">License.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="version.json">version.json</ProjectItem>
       
-      <ProjectItem TargetFileName="icon.png">icon.png</ProjectItem>       
-      <ProjectItem TargetFileName="7z.exe">7z.exe</ProjectItem> 
-      <ProjectItem TargetFileName="7z.dll">7z.dll</ProjectItem> 
     </Project>
   </TemplateContent>
 </VSTemplate>

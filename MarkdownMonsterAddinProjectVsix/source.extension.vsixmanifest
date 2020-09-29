@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="MarkdownMonsterAddinProjectTemplate.Rick Strahl.7c74ee96-7d6f-442b-98f0-83e5a562a6af" Version="1.19" Language="en-US" Publisher="Rick Strahl" />
+        <Identity Id="MarkdownMonsterAddinProjectTemplate.Rick Strahl.7c74ee96-7d6f-442b-98f0-83e5a562a6af" Version="1.23" Language="en-US" Publisher="Rick Strahl" />
         <DisplayName>Markdown Monster Addin Project</DisplayName>
         <Description xml:space="preserve">Creates a new Markdown Monster Addin Project</Description>
         <MoreInfo>http://markdownmonster.west-wind.com/docs/_4ne0rl1zf.htm</MoreInfo>
@@ -17,7 +17,7 @@
         <InstallationTarget Version="[15.0,)" Id="Microsoft.VisualStudio.Enterprise" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7,)" />
     </Dependencies>
     <Assets>
         <Asset d:Source="Project" d:ProjectName="MarkdownMonsterAddinTemplate" d:VsixSubPath="ProjectTemplates" Type="Microsoft.VisualStudio.ProjectTemplate" d:TargetPath="|MarkdownMonsterAddinTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" />
