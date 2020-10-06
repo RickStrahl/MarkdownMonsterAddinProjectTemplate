@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Rick Strahl, West Wind Technologies",
+  "classifications": ["common", "library", "markdown-monster", "WPF"],
+  "identity": "MarkdownMonsterAddin.Project",
+  "name": "Markdown Monster Addin Project",
+  "shortName": "markdownmonsteraddin",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "$safeprojectname$",
+  "symbols": {
+    "company": {
+      "type": "parameter",
+      "defaultValue": "Your Company",
+      "replaces": "$company$"
+    }
+  }
+}

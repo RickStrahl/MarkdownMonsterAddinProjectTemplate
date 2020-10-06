@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+
+    <!--<TargetFrameworks>netcoreapp3.0;net472</TargetFrameworks>-->
+    <OutDir>$(appdata)\Markdown Monster\Addins\$safeprojectname$</OutDir>    
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Windows.Forms" />        
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net472'">
+    <Reference Include="$(localappdata)\Markdown Monster\MarkdownMonster.exe">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(localappdata)\Markdown Monster\MahApps.Metro.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(localappdata)\Markdown Monster\FontAwesome.WPF.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(localappdata)\Markdown Monster\Westwind.Utilities.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon.png" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net472'">
+    <DefineConstants>NETFULL</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>    
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(localappdata)\Markdown Monster\MarkdownMonster.exe</StartProgram>
+  </PropertyGroup>
+</Project>
