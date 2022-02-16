@@ -7,10 +7,8 @@ namespace MarkdownMonsterAddin
 {
     public class SampleAddin : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {
-        public override void OnApplicationStart()
+        public override Task OnApplicationInitialized(AppModel model)
         {
-            base.OnApplicationStart();
-
             Id = "SampleAddin";
 
             // by passing in the add in you automatically
@@ -29,6 +27,8 @@ namespace MarkdownMonsterAddin
 
             // Must add the menu to the collection to display menu and toolbar items            
             this.MenuItems.Add(menuItem);
+
+            return Task.CompletedTask;
         }
 
         public override void OnExecute(object sender)

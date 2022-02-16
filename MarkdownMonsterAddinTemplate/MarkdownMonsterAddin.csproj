@@ -6,14 +6,14 @@
     <UseWPF>true</UseWPF>
 
     <!--<TargetFrameworks>netcoreapp3.0;net472</TargetFrameworks>-->
-    <OutDir>$(appdata)\Markdown Monster\Addins\$safeprojectname$</OutDir>    
+    <OutDir>$(appdata)\Markdown Monster\Addins\$safeprojectname$</OutDir>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Windows.Forms" />        
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xaml" />
     <Reference Include="PresentationCore" />
@@ -38,6 +38,9 @@
 
   <ItemGroup>
     <Resource Include="icon.png" />
+    <None Update="version.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net472'">
@@ -45,7 +48,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>embedded</DebugType>
-    <DebugSymbols>true</DebugSymbols>    
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">

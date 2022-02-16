@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.23</PackageVersion>
+    <PackageVersion>2.0.9</PackageVersion>
     <PackageId>MarkdownMonster.AddinProject.Template</PackageId>
     <Title>Markdown Monster Addin Project Template</Title>
     <Authors>Rick Strahl</Authors>
@@ -13,13 +13,12 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
 
-  </PropertyGroup>
-  <PropertyGroup>
+  
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageOutputPath>./nupkg</PackageOutputPath>    
 
     <PackageTags>markdown-monster;markdown;wpf;documentation</PackageTags>
-    <PackageCopyright>Rick Strahl, West Wind Technologies 2020</PackageCopyright>
+    <PackageCopyright>Rick Strahl, West Wind Technologies 2020-2022</PackageCopyright>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate</PackageProjectUrl>
   </PropertyGroup>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="MarkdownMonsterAddinProjectTemplate.Rick Strahl.7c74ee96-7d6f-442b-98f0-83e5a562a6af" Version="1.23" Language="en-US" Publisher="Rick Strahl" />
+        <Identity Id="MarkdownMonsterAddinProjectTemplate.Rick Strahl.7c74ee96-7d6f-442b-98f0-83e5a562a6af" Version="2.0.9" Language="en-US" Publisher="Rick Strahl" />
         <DisplayName>Markdown Monster Addin Project</DisplayName>
         <Description xml:space="preserve">Creates a new Markdown Monster Addin Project</Description>
         <MoreInfo>http://markdownmonster.west-wind.com/docs/_4ne0rl1zf.htm</MoreInfo>
@@ -9,12 +9,12 @@
         <GettingStartedGuide>http://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm</GettingStartedGuide>
         <Icon>__TemplateIcon.png</Icon>
         <PreviewImage>__PreviewImage.png</PreviewImage>
-        <Tags>Markdown Monster,Markdown,WPF,New Project</Tags>
+        <Tags>markdown,markdown-monster,wpf</Tags>
     </Metadata>
     <Installation>
-        <InstallationTarget Version="[15.0,)" Id="Microsoft.VisualStudio.Community" />
-        <InstallationTarget Version="[15.0,)" Id="Microsoft.VisualStudio.Pro" />
-        <InstallationTarget Version="[15.0,)" Id="Microsoft.VisualStudio.Enterprise" />
+        <InstallationTarget Version="[17.0,)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.7,)" />

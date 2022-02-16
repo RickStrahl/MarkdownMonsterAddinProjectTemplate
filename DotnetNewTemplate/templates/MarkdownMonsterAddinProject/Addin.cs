@@ -3,6 +3,7 @@ using System.Windows;
 using FontAwesome.WPF;
 using MarkdownMonster;
 using MarkdownMonster.AddIns;
+using System.Threading.Tasks;
 
 namespace $safeprojectname$
 {
@@ -16,19 +17,20 @@ namespace $safeprojectname$
     public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {
 
-
         /// <summary>
-        /// Fired when the Addin is initially loaded. This is very early in
-        /// the lifecycle and should only be used to create the addin name
-        /// and UI options.
+        /// Fired when the application has Initialized, the Window is available and the model
+        /// has been loaded. This happens after OnApplicationStart() but before OnWindowLoaded()
+        /// and allows you to access the Model and Window before initial data binding of the Window
+        /// occurs. 
+        ///
+        /// Most basic configuration options should be performed in this method.
+        ///
+        /// If you are accessing UI, don't run that code here but in `OnWindowLoaded()`
+        /// as there's no guarantee that all UI elements have initialized at this stage.
         /// </summary>
-        /// <remarks>
-        /// You do not have access to the Model or UI from this overload.
-        /// </remarks>  
-        public override void OnApplicationStart()
+        /// <param name="model">Instance of the Markdown Monster Application Model</param>
+        public override Task OnApplicationInitialized(AppModel model)
         {
-            base.OnApplicationStart();
-
             
             // Id - should match output folder name. REMOVE 'Addin' from the Id
             Id = "$safeprojectname$";
@@ -54,16 +56,9 @@ namespace $safeprojectname$
 
             // Must add the menu to the collection to display menu and toolbar items            
             MenuItems.Add(menuItem);
+
+            return Task.CompletedTask;
         }
-
-        /// <summary>
-        /// Fired after the model has been loaded. If you need model access during loading
-        /// this is the place to hook up your code.
-        /// </summary>
-        /// <param name="model">The Markdown Monster Application model</param>
-        public override void OnModelLoaded(AppModel model) 
-        { }
-
 
         /// <summary>
         /// Fired after the Markdown Monster UI becomes available
@@ -72,19 +67,22 @@ namespace $safeprojectname$
         /// If you add UI elements as part of your Addin, this is the
         /// place where you can hook them up.
         /// </summary>
-        public override void OnWindowLoaded() 
-        { }
+        public override Task OnWindowLoaded()
+        {
+            return Task.CompletedTask;
+        }
 
 
         /// <summary>
         /// Fired when you click the addin button in the toolbar.
         /// </summary>
         /// <param name="sender"></param>
-        public override void OnExecute(object sender)
+        public override Task OnExecute(object sender)
         {
             MessageBox.Show("Hello from your $safeprojectname$ Addin", "$safeprojectname$ Addin",
                 MessageBoxButton.OK, MessageBoxImage.Information);
 
+            return Task.CompletedTask;
 
             // *** Some things you can do:
 
@@ -95,7 +93,7 @@ namespace $safeprojectname$
             //RefreshPreview();
 
             // // open a new tab with a file
-            //OpenTab(Path.Combine(mmApp.Configuration.CommonFolder, "$safeprojectname$.json"));
+            //await OpenTab(Path.Combine(mmApp.Configuration.CommonFolder, "$safeprojectname$.json"));
 
             // // run a process
             //var imageFile = GetSelection();  // assume image file is selected
@@ -109,11 +107,13 @@ namespace $safeprojectname$
         /// Fired when you click on the configuration button in the addin
         /// </summary>
         /// <param name="sender">The Execute toolbar button for this addin</param>
-        public override void OnExecuteConfiguration(object sender)
+        public override Task OnExecuteConfiguration(object sender)
         {
             MessageBox.Show("Configuration for our sample Addin",
                             "Markdown Addin Sample",
                             MessageBoxButton.OK, MessageBoxImage.Information);
+
+            return Task.CompletedTask;
         }
 
 

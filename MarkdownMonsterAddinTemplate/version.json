@@ -1,12 +1,11 @@
 ﻿{
-  {
-    "id": "$safeprojectname$",
-    "name": "$safeprojectname$",
-    "summary": "Description of $safeprojectname$ in a short paragraph",
-    "description": "Describe $safeprojectname$ with a long description",    
-    "version": "0.01",
-    "minVersion": "1.70",
-    "author": "© your company",
-    "updated": "2020-10-01T12:00:00Z"
-  }
+  "id": "$safeprojectname$",
+  "name": "$safeprojectname$",
+  "summary": "Description of $safeprojectname$ in a short paragraph",
+  "description": "Describe $safeprojectname$ with a long description",
+  "version": "0.1",
+  "minVersion": "2.0",
+  "maxVersion": "2.99",
+  "author": "© your company",
+  "updated": "2021-01-01T12:00:00Z"
 }
