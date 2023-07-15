@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using FontAwesome.WPF;
+using FontAwesome6;
 using MarkdownMonster;
 using MarkdownMonster.AddIns;
 using System.Threading.Tasks;
@@ -15,20 +15,22 @@ namespace $safeprojectname$
     /// https://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm
     /// </summary>
     public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
-    {
-
-
+    {   
         /// <summary>
         /// Fired when the application has Initialized, the Window is available and the model
         /// has been loaded. This happens after OnApplicationStart() but before OnWindowLoaded()
         /// and allows you to access the Model and Window before initial data binding of the Window
-        /// occurs.
+        /// occurs. 
         ///
-        /// Most basic configuration options should be performed in this method
+        /// Most basic configuration options should be performed in this method.
+        ///
+        /// If you are accessing UI, don't run that code here but in `OnWindowLoaded()`
+        /// as there's no guarantee that all UI elements have initialized at this stage.
         /// </summary>
-        /// <param name="model">Instance of the Markdown Monster Application Model</param> 
+        /// <param name="model">Instance of the Markdown Monster Application Model</param>
         public override Task OnApplicationInitialized(AppModel model)
         {
+
             // Id - should match output folder name. REMOVE 'Addin' from the Id
             Id = "$safeprojectname$";
 
@@ -45,7 +47,7 @@ namespace $safeprojectname$
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu
-                FontawesomeIcon = FontAwesomeIcon.Bullhorn
+                FontawesomeIcon = EFontAwesomeIcon.Solid_Bullhorn
             };
 
             // if you don't want to display config or main menu item clear handler
@@ -56,7 +58,6 @@ namespace $safeprojectname$
 
             return Task.CompletedTask;
         }
-
 
         /// <summary>
         /// Fired after the Markdown Monster UI becomes available

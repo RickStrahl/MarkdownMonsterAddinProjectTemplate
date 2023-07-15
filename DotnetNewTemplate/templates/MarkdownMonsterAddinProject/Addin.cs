@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using FontAwesome.WPF;
+using FontAwesome6;
 using MarkdownMonster;
 using MarkdownMonster.AddIns;
 using System.Threading.Tasks;
@@ -48,7 +48,7 @@ namespace $safeprojectname$
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu
-                FontawesomeIcon = FontAwesomeIcon.Bullhorn
+                FontawesomeIcon = EFontAwesomeIcon.Solid_Bullhorn
             };
 
             // if you don't want to display config or main menu item clear handler

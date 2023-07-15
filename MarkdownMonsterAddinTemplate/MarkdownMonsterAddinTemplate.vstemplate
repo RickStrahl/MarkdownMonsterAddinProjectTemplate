@@ -26,6 +26,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="License.txt">License.txt</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="version.json">version.json</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="Launchsettings.json">.\Properties\Launchsettings.json</ProjectItem>
       
     </Project>
   </TemplateContent>

@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>2.0.9</PackageVersion>
+    <PackageVersion>3.0.1</PackageVersion>
     <PackageId>MarkdownMonster.AddinProject.Template</PackageId>
     <Title>Markdown Monster Addin Project Template</Title>
     <Authors>Rick Strahl</Authors>
     <Description>Project Template that creates a base Markdown Monster Addin that can be customized.</Description>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
 
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
@@ -18,9 +18,11 @@
     <PackageOutputPath>./nupkg</PackageOutputPath>    
 
     <PackageTags>markdown-monster;markdown;wpf;documentation</PackageTags>
-    <PackageCopyright>Rick Strahl, West Wind Technologies 2020-2022</PackageCopyright>
+    <PackageCopyright>Rick Strahl, West Wind Technologies 2020-2023</PackageCopyright>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/RickStrahl/MarkdownMonsterAddinProjectTemplate</PackageProjectUrl>
+
+	<NoWarn>NU5100;NU5110;NU5111;NU5128</NoWarn>  
   </PropertyGroup>
 
 
@@ -29,8 +31,17 @@
     <Compile Remove="**\*" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Remove="templates\MarkdownMonsterAddinProject\Properties\LaunchSettings.json" />
+  </ItemGroup>
+
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="nupkg\" />
   </ItemGroup>
 
 </Project>

@@ -4,8 +4,8 @@
   "summary": "Description of $safeprojectname$ in a short paragraph",
   "description": "Describe $safeprojectname$ with a long description",
   "version": "0.1",
-  "minVersion": "2.3",
-  "maxVersion": "2.99",
+  "minVersion": "3.0",
+  "maxVersion": "3.99",
   "author": "© your company",
   "updated": "2022-01-01T12:00:00Z"
 }
