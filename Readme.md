@@ -2,7 +2,7 @@
 
 <img src="MarkdownMonster_Icon_256.png" width="150"/>
 
-This project contains the `dotnet new` template and Visual Studio Addin to create a Markdown Monster Addin.
+This project contains the **dotnet new Template** and a **Visual Studio VSIX Project Template** to create a Markdown Monster Addin.
 
 For more detailed information on how to create an addin in Markdown Monster please check the documentation:
 
@@ -19,10 +19,10 @@ Please refer to the documentation link on [install and usage instructions](https
 
 ## Requirements
 
-### .NET 4.7.2 Project Required
-Markdown Monster Addins have to be built against .NET 4.7.2 or 4.8, as 4.7.2 is the base version that Markdown Monster is built against. The dependencies in the addin project require the same runtime version or newer in order to bind to the Markdown Monster host assembly.
+### .NET 7.0 Required
+Markdown Monster Addins have to be built against .NET 7.0 Windows as this is the base version that Markdown Monster is built against. The dependencies in the addin project require the same runtime version or newer in order to bind to the Markdown Monster host assembly.
 
-The Addin automatically creates a project that is configured for the correct version required for Markdown Monster (4.7.2 currently).
+The Addin automatically creates a project that is configured for the correct version required for Markdown Monster (`net7.0-windows` current).
 
 ### Visual Studio Versions and Editions
 This Visual Studio Extension now only works for:
