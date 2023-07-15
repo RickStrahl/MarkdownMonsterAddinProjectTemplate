@@ -1,8 +1,10 @@
-# Markdown Monster Addin Templates
+# Markdown Monster New Addin Project  Templates
 
 <img src="MarkdownMonster_Icon_256.png" width="150"/>
 
-This project contains the **dotnet new Template** and a **Visual Studio VSIX Project Template** to create a Markdown Monster Addin.
+This project contains the source code for the **dotnet new Template** and **Visual Studio VSIX Project Template** that can be used to create your own Markdown Monster Addins. 
+
+To create a Markdown Monster Addin you don't need to do anything with this repository - it's provided merely as a reference or for those who want to customize the templates that are publically available via NuGet and the Visual Studio Marketplace.
 
 For more detailed information on how to create an addin in Markdown Monster please check the documentation:
 
