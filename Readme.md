@@ -11,12 +11,11 @@ For more detailed information on how to create an addin in Markdown Monster plea
 * [Creating an Addin for Markdown Monster](https://markdownmonster.west-wind.com/docs/Creating-Markdown-Monster-Addins-with-NET/Creating-a-Markdown-Monster-Add--in.html)
 
 
-## Use the Templates
-The NuGet and Visual Studio templates are publicly available via their respective download sources:
+## Use the Dotnet Template or Visual Studio Extension
+The NuGet and Visual Studio templates are publicly available via their respective download sources on NuGet and the Visual Studio Gallery (or the Visual Studio Extensions Manager):
 
 * [The NuGet Project Template](https://www.nuget.org/packages/MarkdownMonster.AddinProject.Template/)
 * [The Visual Studio Addin](https://marketplace.visualstudio.com/items?itemname=rickstrahl.markdownmonsteraddinproject)
-
 
 Please refer to the documentation link on [creating, installing and using a Markdown Monster addin](https://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm) in the documentation.
 
