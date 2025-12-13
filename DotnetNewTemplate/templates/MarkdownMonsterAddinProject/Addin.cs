@@ -4,6 +4,7 @@ using FontAwesome6;
 using MarkdownMonster;
 using MarkdownMonster.AddIns;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace $safeprojectname$
 {
@@ -12,7 +13,7 @@ namespace $safeprojectname$
     /// @@@ $safeprojectname$ @@@
     ///
     /// More info on Addin Development:
-    /// https://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm
+    /// https://markdownmonster.west-wind.com/docs/Creating-Markdown-Monster-Addins-with-NET/Creating-a-Markdown-Monster-Add--in.html
     /// </summary>
     public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {
@@ -48,7 +49,10 @@ namespace $safeprojectname$
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu
-                FontawesomeIcon = EFontAwesomeIcon.Solid_Bullhorn
+                FontawesomeIcon = EFontAwesomeIcon.Solid_Bullhorn,
+
+                // optionally you can also use any image source (takes precendence over icon above if specified)
+                IconImageSource = null
             };
 
             // if you don't want to display config or main menu item clear handler

@@ -17,19 +17,19 @@ The NuGet and Visual Studio templates are publicly available via their respectiv
 * [The Visual Studio Addin](https://marketplace.visualstudio.com/items?itemname=rickstrahl.markdownmonsteraddinproject)
 
 
-Please refer to the documentation link on [creating, installing and usaging a Markdown Monster addin](https://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm) in the documentation.
+Please refer to the documentation link on [creating, installing and using a Markdown Monster addin](https://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm) in the documentation.
 
 ## Requirements
 
-### .NET 7.0 Required
-Markdown Monster Addins have to be built against .NET 7.0 Windows as this is the base version that Markdown Monster is built against. The dependencies in the addin project require the same runtime version or newer in order to bind to the Markdown Monster host assembly.
+### .NET 10.0 Required
+Markdown Monster Addins have to be built against .NET 10.0 Windows as this is the base version that Markdown Monster is built against. The dependencies in the addin project require the same runtime version or newer in order to bind to the Markdown Monster host assembly.
 
-The Addin automatically creates a project that is configured for the correct version required for Markdown Monster (`net7.0-windows` current).
+The Addin automatically creates a project that is configured for the correct version required for Markdown Monster (`net10.0-windows` current for MM v4.0).
 
 ### Visual Studio Versions and Editions
 This Visual Studio Extension now only works for:
 
-* Visual Studio 2022 (x64)
+* Visual Studio 2026 (x64)
 
 Supported Visual Studio Editions:
 
@@ -38,7 +38,7 @@ Supported Visual Studio Editions:
 * Enterprise
 
 ### Additional Resources
-* [Creating a Markdown Monster Addin](http://markdownmonster.west-wind.com/docs/_4ne0s0qoi.htm)
+* [Creating a Markdown Monster Addin](https://markdownmonster.west-wind.com/docs/Creating-Markdown-Monster-Addins-with-NET/Creating-a-Markdown-Monster-Add--in.html)
 * [Markdown Monster](https://github.com/rickstrahl/MarkdownMonster)
 * [Markdown Monster Addin Repository](https://github.com/RickStrahl/MarkdownMonsterAddinsRegistry)
 * [Markdown Monster Addin Project in the Visual Studio Gallery](https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e)

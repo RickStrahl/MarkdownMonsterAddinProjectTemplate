@@ -1,26 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>0.1</Version>
-		<TargetFramework>net7.0-windows</TargetFramework>
+		<Version>0.2</Version>
+		<TargetFramework>net10.0-windows</TargetFramework>
 		<UseWPF>true</UseWPF>
 
-		<!--<TargetFrameworks>netcoreapp3.0;net472</TargetFrameworks>-->
 		<OutDir>$(appdata)\Markdown Monster\Addins\$safeprojectname$</OutDir>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 
 		<DebugType>embedded</DebugType>
 		<DebugSymbols>true</DebugSymbols>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Reference Include="$(LocalAppData)\Markdown Monster\MarkdownMonster.dll">
+		<Reference Include="$(ProgramFiles)\Markdown Monster\MarkdownMonster.dll">
 			<Private>false</Private>
 			<IncludeAssets>compile</IncludeAssets>
 		</Reference>
-		<PackageReference Include="FontAwesome6.Pro.Fonts" Version="*" />
+
+		<PackageReference Include="FontAwesome6.Pro.Fonts" Version="*"/>
 		<PackageReference Include="Westwind.Utilities" Version="*" />
 
-		<!--<PackageReference Include="MahApps.Metro" Version="*" />-->
+		<!-- Other packages you might want to use directly - if creating forms UI -->
+		<!-- <PackageReference Include="MahApps.Metro" Version="*" />-->
+		<!-- <PackageReference Include="Westwind.WebView" Version="*" /> -->		
 	</ItemGroup>
 
 	<ItemGroup>

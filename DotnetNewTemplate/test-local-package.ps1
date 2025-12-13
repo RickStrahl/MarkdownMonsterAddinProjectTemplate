@@ -1,1 +1,1 @@
-dotnet new -i .\nupkg\
+dotnet new install .\nupkg\*.nupkg --force
