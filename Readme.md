@@ -8,7 +8,8 @@ To create a Markdown Monster Addin you don't need to do anything with this repos
 
 For more detailed information on how to create an addin in Markdown Monster please check the documentation:
 
-* [Creating an Addin for Markdown Monster](https://markdownmonster.west-wind.com/docs/_4nb0se717.htm)
+* [Creating an Addin for Markdown Monster](https://markdownmonster.west-wind.com/docs/Creating-Markdown-Monster-Addins-with-NET/Creating-a-Markdown-Monster-Add--in.html)
+
 
 ## Use the Templates
 The NuGet and Visual Studio templates are publicly available via their respective download sources:
@@ -36,6 +37,11 @@ Supported Visual Studio Editions:
 * Community
 * Professional
 * Enterprise
+
+You can find and install the Visual Studio version from the Visual Studio Extensions Manager by looking for **Markdown Monster Addin Project**.
+
+* [VSIX and Visual Studio Gallery ](https://marketplace.visualstudio.com/vsgallery/231f13cc-2348-432c-a69f-82e7b725587e)
+* [Direct VSIX download](MarkdownMonsterAddinProjectTemplate.vsix)
 
 ### Additional Resources
 * [Creating a Markdown Monster Addin](https://markdownmonster.west-wind.com/docs/Creating-Markdown-Monster-Addins-with-NET/Creating-a-Markdown-Monster-Add--in.html)
