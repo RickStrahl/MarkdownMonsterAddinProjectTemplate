@@ -19,8 +19,8 @@ namespace $safeprojectname$
     {
 
         /// <summary>
-        /// Fired when the application has Initialized, the Window is available and the model
-        /// has been loaded. This happens after OnApplicationStart() but before OnWindowLoaded()
+        /// Fired when the application has Initialized, the Window is not available and the model
+        /// has not been loaded. This happens after OnApplicationStart() but before OnWindowLoaded()
         /// and allows you to access the Model and Window before initial data binding of the Window
         /// occurs. 
         ///

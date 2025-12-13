@@ -4,6 +4,7 @@ using FontAwesome6;
 using MarkdownMonster;
 using MarkdownMonster.AddIns;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace $safeprojectname$
 {
@@ -17,8 +18,8 @@ namespace $safeprojectname$
     public class $safeprojectname$ : MarkdownMonster.AddIns.MarkdownMonsterAddin
     {   
         /// <summary>
-        /// Fired when the application has Initialized, the Window is available and the model
-        /// has been loaded. This happens after OnApplicationStart() but before OnWindowLoaded()
+        /// Fired when the application has Initialized, the Window is not available and the model
+        /// has not been loaded. This happens after OnApplicationStart() but before OnWindowLoaded()
         /// and allows you to access the Model and Window before initial data binding of the Window
         /// occurs. 
         ///
@@ -38,7 +39,7 @@ namespace $safeprojectname$
             // REMOVE 'Addin' from the Name
             Name = "$safeprojectname$";
 
-
+ 
             // by passing in the add in you automatically
             // hook up OnExecute/OnExecuteConfiguration/OnCanExecute
             var menuItem = new AddInMenuItem(this)
@@ -47,7 +48,10 @@ namespace $safeprojectname$
 
                 // if an icon is specified it shows on the toolbar
                 // if not the add-in only shows in the add-ins menu
-                FontawesomeIcon = EFontAwesomeIcon.Solid_Bullhorn
+                FontawesomeIcon = EFontAwesomeIcon.Solid_Bullhorn,
+
+                // optionally you can also use any image source (takes precendence over icon above if specified)
+                IconImageSource = null
             };
 
             // if you don't want to display config or main menu item clear handler
